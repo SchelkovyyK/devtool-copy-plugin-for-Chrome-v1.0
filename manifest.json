@@ -1,0 +1,20 @@
+{
+  "name": "Console Copy Tool",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Capture everything from DevTools Console",
+  "permissions": [
+    "storage",
+    "clipboardWrite",
+    "debugger",
+    "tabs",
+    "activeTab"
+  ],
+  "devtools_page": "devtools.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

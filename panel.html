@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Console Copy</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+      }
+      #logs {
+        white-space: pre-wrap;
+        height: 300px;
+        overflow-y: scroll;
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+      button {
+        margin: 5px 5px 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Console Logs</h2>
+    <div id="logs"></div>
+    <div>
+      <button id="start">Start Recording</button>
+      <button id="stop" disabled>Stop Recording</button>
+      <button id="copy">Copy All Logs</button>
+      <div id="logs"></div>
+    </div>
+    <script src="panel.js"></script>
+  </body>
+</html>
